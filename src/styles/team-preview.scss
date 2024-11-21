@@ -1,0 +1,205 @@
+.team_preview_img {
+
+    max-width: 520px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+
+    padding: 10px;
+
+    img {
+        border-radius: 5px;
+    }
+
+    margin-top: 30px;
+
+}
+
+
+
+.team_privew_sec {
+    .team_preview_main {
+        .common_player {
+            .name_avtar {
+                max-width: 78px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.captian_choose_sec {
+    .vc_captain {
+        .heading {
+            .heading_sub {
+                h5 {
+                    margin: 0px 26px;
+                }
+            }
+        }
+
+    }
+}
+
+
+.captian_choose_sec {
+    .heading {
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 13px;
+            margin: 2px 0;
+        }
+    }
+}
+
+.blog_detail_sec {
+    .blog_detail_content {
+        .heading {
+            .title {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            p {
+                font-size: 13px;
+                line-height: 19px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.latest_blog_sec {
+    .latest_news_blog_card {
+        .blog_img {
+            img {
+                height: 139px;
+            }
+        }
+
+        .content {
+            padding: 6px 15px;
+
+            .date_p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+footer {
+    .links {
+        ul {
+            li {
+                margin-bottom: 6px;
+
+                a {
+                    font-size: 14px;
+
+                    svg {
+                        margin-right: 10px;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+.score_main_sli {
+    min-width: 345px;
+}
+
+.team_score_tabs_sec {
+    .live_match_content {
+        .comman_card {
+            .content {
+                .ms-4 {
+                    margin-left: 0rem !important;
+                }
+            }
+        }
+    }
+}
+
+.score_main_sec {
+    padding: 20px 0;
+
+    .score_row {
+        margin-bottom: 40px;
+    }
+
+    .result_content {
+        h4 {
+            font-size: 13px;
+        }
+    }
+
+    .match_title {
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    .score_content {
+        .score {
+            margin-left: 3px !important;
+
+        }
+
+        .team_img {
+            width: 40px;
+            height: 40px;
+            margin: 0 !IMPORTANT;
+
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+header {
+    .top_menu {
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.team_privew_sec .team_preview_main .common_player .name_avtar img {
+    width: 37px;
+}
+
+
+.team_privew_sec .team_preview_main .wicket_heading {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team_privew_sec .team_preview_main .wick_heading_common h4 {
+    font-size: 12px;
+}
+
+.team_privew_sec .team_preview_main .common_player .name_avtar .player_name {
+    font-size: 9px;
+}
+
+.team_privew_sec .team_preview_main .common_player .name_avtar p {
+    font-size: 11px;
+}

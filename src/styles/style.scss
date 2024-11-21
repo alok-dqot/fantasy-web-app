@@ -1,0 +1,2296 @@
+body {
+    background: #e3e6e3;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    max-width: 1146px;
+    margin: 0 auto;
+}
+
+header {
+    .top_menu {
+        background: #0a1649;
+        padding: 18px;
+
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            font-size: 25px;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    nav {
+        background: #3652ad;
+        padding: 14px;
+
+        .genrate_btn {
+            background: #00972a;
+            border: 1px solid #00972a;
+            border-radius: 50px;
+
+            &:hover {
+                background: #fff;
+                border-color: #fff;
+                color: #00972a;
+            }
+        }
+    }
+}
+
+.swiper_score_card {
+    background: #fff;
+    padding: 20px;
+
+    .heading {
+        margin: 0px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+        }
+    }
+
+    .swiper {
+        overflow: inherit;
+    }
+
+    .score_card {
+        margin-top: 20px;
+        box-shadow: 0 0 40px 0 rgb(187 187 187 / 76%);
+        border-radius: 26px;
+
+        .vs_img {
+            position: absolute;
+            z-index: 1;
+            left: 48%;
+            top: 22%;
+            transform: translate(-100%, -50%);
+        }
+
+        .team_flag_main {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .team_flag {
+                padding: 30px 55px;
+                width: 100%;
+            }
+
+            .grey_bg {
+                background: #000376;
+                border-radius: 20px 0 0 0;
+            }
+
+            .blue_bg {
+                background: #420072;
+                border-radius: 0px 20px 0 0;
+            }
+
+            img {
+                border-radius: 50%;
+                background: #dcdcdc;
+                border: 2px solid #ffffff;
+                padding: 3px;
+            }
+        }
+
+        .card_bg {
+            background: #fff;
+            border-top: 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 0 0 20px 20px;
+
+            .match_name {
+                border-top: 1px solid #e0e0e0;
+                text-align: center;
+
+                h5 {
+                    font-size: 13px;
+                    font-weight: 600;
+                    padding: 11px;
+                    color: #000;
+                    margin: 0;
+                }
+            }
+
+            .win_text {
+                font-size: 15px;
+                color: #00b533;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-weight: 600;
+                margin: 10px 0 10px 0px;
+
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                padding: 5px;
+                padding-inline: 10px;
+
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+
+            .padding_div {
+                padding: 16px 16px 0 16px;
+            }
+
+            .team_flag_one {
+                display: flex;
+                align-items: center;
+
+                .name {
+                    margin-left: 15px;
+
+                    h4 {
+                        font-size: 16px;
+                        margin: 0;
+                        color: #000;
+                    }
+                }
+            }
+
+            .scroe_titles {
+                h5 {
+                    color: #000;
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .swiper-button-next {
+        width: 46px;
+        height: 46px;
+        background: #002291;
+        border-radius: 50%;
+        right: -73px;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='11' height='18' viewBox='0 0 11 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.928432 1.15339C1.07062 1.01601 1.23951 0.907013 1.42544 0.832647C1.61137 0.75828 1.81069 0.720001 2.01198 0.720001C2.21327 0.720001 2.41259 0.75828 2.59852 0.832647C2.78445 0.907013 2.95334 1.01601 3.09553 1.15339L10.1501 7.95554C10.2926 8.09264 10.4057 8.25549 10.4828 8.43477C10.5599 8.61404 10.5996 8.80623 10.5996 9.00031C10.5996 9.1944 10.5599 9.38659 10.4828 9.56586C10.4057 9.74514 10.2926 9.90799 10.1501 10.0451L3.09553 16.8472C2.95324 16.9844 2.78431 17.0933 2.59839 17.1675C2.41248 17.2418 2.21322 17.28 2.01198 17.28C1.81075 17.28 1.61148 17.2418 1.42557 17.1675C1.23965 17.0933 1.07073 16.9844 0.928432 16.8472C0.786138 16.71 0.673264 16.5472 0.596255 16.3679C0.519246 16.1886 0.479609 15.9965 0.479609 15.8025C0.479609 15.6084 0.519246 15.4163 0.596255 15.237C0.673264 15.0578 0.786138 14.8949 0.928432 14.7577L6.8918 8.9929L0.928432 3.24294C0.329021 2.66498 0.34439 1.71653 0.928432 1.15339Z' fill='white'/%3E%3C/svg%3E%0A");
+            position: absolute;
+            top: -5px;
+        }
+    }
+
+    .swiper-button-prev {
+        width: 46px;
+        height: 46px;
+        background: #002291;
+        border-radius: 50%;
+        left: -73px;
+
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='11' height='18' viewBox='0 0 11 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.0716 1.15339C9.92938 1.01601 9.76049 0.907013 9.57456 0.832647C9.38863 0.75828 9.18931 0.720001 8.98802 0.720001C8.78673 0.720001 8.58741 0.75828 8.40148 0.832647C8.21555 0.907013 8.04666 1.01601 7.90447 1.15339L0.849863 7.95554C0.707382 8.09264 0.594343 8.25549 0.517217 8.43477C0.44009 8.61404 0.400391 8.80623 0.400391 9.00031C0.400391 9.1944 0.44009 9.38659 0.517217 9.56586C0.594343 9.74514 0.707382 9.90799 0.849863 10.0451L7.90447 16.8472C8.04676 16.9844 8.21569 17.0933 8.40161 17.1675C8.58752 17.2418 8.78678 17.28 8.98802 17.28C9.18925 17.28 9.38852 17.2418 9.57443 17.1675C9.76035 17.0933 9.92927 16.9844 10.0716 16.8472C10.2139 16.71 10.3267 16.5472 10.4037 16.3679C10.4808 16.1886 10.5204 15.9965 10.5204 15.8025C10.5204 15.6084 10.4808 15.4163 10.4037 15.237C10.3267 15.0578 10.2139 14.8949 10.0716 14.7577L4.1082 8.9929L10.0716 3.24294C10.671 2.66498 10.6556 1.71653 10.0716 1.15339Z' fill='white'/%3E%3C/svg%3E%0A");
+            position: absolute;
+            top: -5px;
+        }
+    }
+}
+
+.cricket_match_blog_sec {
+    .heading {
+        margin: 20px;
+
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+        }
+    }
+
+    .blog_card {
+        background: #fff;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 20px;
+
+        .blog-img {
+            width: 164px;
+            height: 102px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+
+                object-fit: contain;
+            }
+        }
+
+        .content {
+            margin-left: 20px;
+
+            h4 {
+                font-size: 20px;
+                color: #000000;
+                font-weight: 600;
+                margin-bottom: 5px;
+
+                text-transform: uppercase;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: #656565;
+                margin-bottom: 10px;
+            }
+
+            .read_more_btn {
+                background: #3652ad;
+                border: 1px solid #3652ad;
+                border-radius: 4px;
+
+                svg {
+                    margin-left: 12px;
+                }
+            }
+
+            h5 {
+                font-size: 12px;
+                color: #000000;
+                display: flex;
+                align-items: center;
+                margin: 8px 0 0 0;
+
+                svg {
+                    margin-right: 8px;
+                }
+            }
+        }
+
+        .match_button {
+            position: absolute;
+            right: 0;
+            top: 16px;
+
+            .match_red_btn {
+                background: #db0000;
+                border: 1px solid #db0000;
+                font-size: 12px;
+                border-radius: 4px 0 0 4px;
+            }
+        }
+    }
+
+    .laod_more_btn {
+        background: #3652ad;
+        border: 1px solid #3652ad;
+        border-radius: 4px;
+
+        svg {
+            margin-left: 11px;
+        }
+    }
+}
+
+footer {
+    background: #3652ad;
+    padding: 50px 50px 30px 50px;
+    margin-top: 50px;
+
+    .heading_footer {
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        text-align: justify;
+        color: #ffffff;
+        margin: 0;
+    }
+
+    .links {
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin-bottom: 15px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 17px;
+
+                    svg {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.score_main_sec {
+    background-image: url(../../public/score_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+
+    .match_title {
+        h3 {
+            font-weight: 600;
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+    }
+
+    .score_content {
+        display: flex;
+        align-items: center;
+
+        .team_img {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        .score {
+            h3 {
+                font-weight: 600;
+                font-size: 21px;
+                margin-bottom: 10px;
+                color: #ffffff;
+            }
+
+            h4 {
+                font-weight: 600;
+                font-size: 19px;
+                margin: 0px;
+                color: #ffffff;
+
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .result_content {
+        h4 {
+            font-weight: 600;
+            font-size: 22px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+
+    .score_row {
+        margin-bottom: 30px;
+    }
+}
+
+.team_score_tabs_sec {
+
+    // .tab-content {
+    //     background: rgba(244, 242, 242, 0.71);
+    // }
+    .nav-tabs {
+        justify-content: center;
+        margin-top: -59px;
+        border: 0;
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+
+        .nav-item {
+            .nav-link.active {
+                background: #3652ad;
+                border: 1px solid #3652ad;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .nav-link {
+                background: transparent;
+                border: 0;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 7px 40px;
+            }
+        }
+    }
+
+    .live_match_content {
+        .comman_card {
+            background: #ffffff;
+            box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+                padding-bottom: 10px;
+                padding-top: 10px;
+
+                h5 {
+                    font-size: 18px;
+                    color: #000;
+                    margin: 0;
+                    font-weight: 600;
+                }
+
+                .buttons {
+                    .btn_red {
+                        font-size: 18px;
+                        background: #d00000;
+                        border: 1px solid #d00000;
+                        color: #fff;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                    }
+
+                    .btn_green {
+                        font-size: 17px;
+                        background: #00a12d;
+                        border: 1px solid #00a12d;
+                        color: #fff;
+                        border-radius: 5px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            .batter_heading {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+                padding-bottom: 10px;
+
+                .batter_div {
+                    h5 {
+                        font-size: 17px;
+                        color: #23006d;
+                        margin: 0;
+                        font-weight: 600;
+                    }
+                }
+
+                .r_boll {
+                    display: flex;
+                    align-items: center;
+
+                    h5 {
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            .batsman_runs {
+                border: 0 !important;
+
+                .batter_div {
+                    h5 {
+                        color: #000 !important;
+                    }
+                }
+            }
+        }
+
+        .over_list {
+            display: flex;
+            align-items: center;
+            border-right: 1px solid #a6a6a6;
+            padding-right: 20px;
+
+            .comman_run {
+                width: 30px;
+                height: 30px;
+                flex: 0 0 30px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px !important;
+            }
+
+            .single_run {
+                background: #bababa;
+                color: #000 !important;
+            }
+
+            .six_run {
+                background: #49a30f;
+                color: #fff !important;
+            }
+
+            .six_four {
+                background: #e18b0a;
+                color: #fff !important;
+            }
+
+            .six_wicket {
+                background: #d00000;
+                color: #fff !important;
+            }
+
+            .run_count {
+                margin-left: 20px !important;
+            }
+        }
+
+        .over_list {
+            h5 {
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+.info_tab_content {
+    .comman_card {
+        background: #ffffff;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .team_run_ned {
+            display: flex;
+            align-items: center;
+
+            .image {
+                width: 85px;
+                height: 85px;
+
+                img {
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+            }
+
+            .content {
+                margin-left: 20px;
+
+                p {
+                    color: #898989;
+                    font-size: 16px;
+                    margin: 0;
+                }
+
+                h5 {
+                    color: #000;
+                    font-size: 17px;
+                    margin: 5px 0;
+                }
+
+                h6 {
+                    color: #3652ad;
+                    font-size: 17px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .addrss_main {
+            h5 {
+                font-size: 16px;
+                font-weight: 500;
+                color: #979494;
+                margin: 0;
+                border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+                display: flex;
+                align-items: center;
+                padding: 10px 0px 10px 0;
+
+                svg {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .recent_matchs_main {
+        .heading {
+            h5 {
+                font-size: 18px;
+                margin: 0;
+                border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+                padding-bottom: 19px;
+
+                span {
+                    font-size: 14px;
+                    color: #5b5b5b;
+                }
+            }
+        }
+
+        .accordion {
+            .accordion-item {
+                border: 0;
+                border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+                border-radius: 0;
+
+                .accordion-header {
+                    .accordion-button:focus {
+                        box-shadow: none;
+                    }
+
+                    .accordion-button:not(.collapsed) {
+                        background-color: transparent;
+                        border: 0;
+                    }
+
+                    .team_name {
+                        h4 {
+                            color: #414141;
+                            font-size: 18px;
+                            margin: 0;
+                        }
+                    }
+
+                    .runs_balls {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 30px;
+
+                        h5 {
+                            width: 30px;
+                            height: 30px;
+                            flex: 0 0 30px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-left: 18px;
+                        }
+
+                        .star_run {
+                            background: #eaeaea;
+                            border: 1px solid #b1b1b1;
+                            color: #000 !important;
+                        }
+
+                        .star_l {
+                            background: rgba(208, 0, 0, 0.1);
+                            border: 1px solid #ff0000;
+                            color: #ff0000 !important;
+                        }
+
+                        .star_w {
+                            background: #c1ff983b;
+                            border: 1px solid #49a30f;
+                            color: #49a30f !important;
+                        }
+                    }
+                }
+
+                .accordion-body {
+                    padding: 0;
+
+                    .recent_match_card {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 15px 0;
+                        border-top: 1px solid #b1b1b1;
+
+                        .won_text {
+                            p {
+                                color: #00972a;
+                                font-weight: 600;
+                                margin: 10px 0 0 0;
+                            }
+                        }
+
+                        .team_match_ {
+                            .img_con {
+                                display: flex;
+                                align-items: center;
+
+                                .image {
+                                    img {
+                                        width: 45px;
+                                        height: 45px;
+                                        border-radius: 50%;
+                                    }
+                                }
+
+                                .content {
+                                    margin-left: 15px;
+
+                                    h5 {
+                                        color: #000;
+                                        font-size: 18px;
+                                        margin-bottom: 2px;
+                                    }
+
+                                    p {
+                                        color: #7a7a7a;
+                                        font-size: 16px;
+                                        margin: 0;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                            h4 {
+                                color: #000;
+                                font-size: 18px;
+                                margin: 10px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .did_not_bat_main {
+        .content {
+            border-bottom: 1px solid rgba(91, 91, 91, 0.4);
+            padding-bottom: 10px;
+
+            h5 {
+                font-size: 18px;
+                color: #000;
+                margin: 0;
+                font-weight: 600;
+            }
+        }
+
+        .umpirs_main {
+            margin-top: 15px;
+
+            .umpire {
+                display: flex;
+                align-items: center;
+
+                .name {
+                    margin-left: 20px;
+
+                    p {
+                        color: #6c6c6c;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-bottom: 4px;
+
+                        span {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.scorecars_tabs_main {
+    .accordion {
+        .accordion-item {
+            margin: 10px 0;
+
+            .accordion-header {
+                .accordion-button {
+                    background: #3652ad;
+                    color: #fff;
+
+                    &::after {
+                        background-image: url("data:image/svg+xml,%3Csvg width='22' height='14' viewBox='0 0 22 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.480348 0.535358C0.790509 0.192569 1.21112 0 1.64969 0C2.08826 0 2.50887 0.192569 2.81903 0.535358L11.0061 9.58641L19.1931 0.535358C19.5051 0.202284 19.9229 0.0179825 20.3565 0.0221481C20.7902 0.0263138 21.205 0.218615 21.5117 0.557632C21.8183 0.89665 21.9923 1.35526 21.996 1.83469C21.9998 2.31411 21.8331 2.77599 21.5318 3.12085L12.1754 13.4646C11.8653 13.8074 11.4446 14 11.0061 14C10.5675 14 10.1469 13.8074 9.83674 13.4646L0.480348 3.12085C0.17028 2.77796 -0.00390625 2.31295 -0.00390625 1.8281C-0.00390625 1.34325 0.17028 0.878252 0.480348 0.535358Z' fill='white'/%3E%3C/svg%3E%0A");
+                    }
+                }
+
+                .team_main {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .team_img {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            width: 38px;
+                            height: 38px;
+                            border-radius: 50%;
+                        }
+
+                        h5 {
+                            color: #fff;
+                            font-size: 17px;
+                            font-weight: 500;
+                            margin: 0px 0 0 15px;
+                        }
+                    }
+
+                    h6 {
+                        margin: 0 20px 0 0;
+                    }
+                }
+            }
+        }
+
+        .accordion-body {
+            .scorecard_cards_count {
+                table {
+                    thead {
+                        tr {
+                            th {
+                                background: #e1ebff;
+
+                                &:nth-child(1) {
+                                    border-radius: 8px 0 0 0;
+                                }
+
+                                &:last-child {
+                                    border-radius: 0px 8px 0px 0px;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #000;
+
+                            td {
+                                p {
+                                    color: #717171;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.latest_blog_sec {
+    margin-top: 20px;
+
+    .latest_news_blog_card {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .blog_img {
+            img {
+                width: 500px;
+                height: 211px;
+                border-radius: 10px 0 0 10px;
+            }
+        }
+
+        .content {
+            background: #fff;
+            border-radius: 0 10px 10px 0;
+            width: 100%;
+            padding: 24px 15px;
+            position: relative;
+
+            h4 {
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 5px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                /* number of lines to show */
+                line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                color: #656565;
+                margin: 0;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                /* number of lines to show */
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .read_more {
+                background: #3652ad;
+                border: 1px solid #3652ad;
+                border-radius: 4px;
+                font-size: 14px;
+                padding: 8px 16px;
+                margin: 15px 0;
+
+                svg {
+                    margin-left: 15px;
+                }
+            }
+
+            .date_p {
+                font-size: 15px;
+                color: #000;
+                font-weight: 500;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 10px;
+                }
+            }
+
+            .cricket_btn {
+                position: absolute;
+                right: 0;
+                top: 15px;
+
+                .cricket_match_btn {
+                    background: #db0000;
+                    border: 1px solid #db0000;
+                    font-size: 12px;
+                    border-radius: 4px 0 0 4px;
+                }
+            }
+        }
+    }
+
+    .read_more_btn {
+        .read_more {
+            background: #3652ad;
+            border: 1px solid #3652ad;
+            border-radius: 4px;
+
+            svg {
+                margin-left: 11px;
+            }
+        }
+    }
+
+    .team_add_image {
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+.blog_detail_sec {
+    background: #fff;
+    padding: 15px;
+
+    .blog_detail_content {
+        .heading {
+            margin-top: 5px;
+
+            .title {
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 33px;
+                color: #000000;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                color: #808080;
+                margin: 0;
+            }
+        }
+
+        .admin {
+            display: flex;
+            align-items: center;
+
+            .avtar {
+                margin: 20px 0;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                margin-left: 15px;
+
+                h4 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #000000;
+                    margin-bottom: 4px;
+                }
+
+                h5 {
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #797979;
+                }
+            }
+        }
+
+        .blog_img {
+            margin-bottom: 30px;
+
+            img {
+                width: 736px;
+                height: 414px;
+                border-radius: 10px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 25px;
+            color: #808080;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+    }
+
+    .ads_banner {
+        margin-bottom: 20px;
+    }
+
+    .pridicate_img {
+        img {
+            width: 736px;
+            height: 359px;
+            border-radius: 10px;
+        }
+    }
+
+    .mini_cricket_banner {
+        img {
+            height: 276px;
+            border-radius: 10px;
+        }
+    }
+
+    .team_add_image {
+        margin-top: 20px;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+}
+
+.login_btn {
+    background: #3652ad;
+    border: 1px solid #3652ad;
+    color: #fff;
+    padding: 8px 34px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.Login_form {
+    .input_fileds {
+        margin-bottom: 18px;
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .form-control {
+            padding: 8px 15px;
+        }
+    }
+}
+
+.form-control:focus {
+    border-color: #3652ad;
+    box-shadow: none;
+}
+
+.captian_choose_sec {
+    background: #fff;
+
+    overflow: hidden;
+
+    .heading {
+        margin-top: 20px;
+        text-align: center;
+
+        h3 {
+            font-size: 25px;
+            margin: 0;
+        }
+
+        p {
+            color: #666666;
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    }
+
+    .vc_captain {
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-top: 1px solid #c3c3c3;
+            border-bottom: 1px solid #c3c3c3;
+            padding: 12px 0;
+
+            .heading_sub {
+                display: flex;
+                align-items: center;
+
+                h5 {
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #898989;
+                    margin: 0px 30px;
+                }
+            }
+        }
+
+        .continue_btn {
+            text-align: center;
+            margin: 20px 0 30px 0;
+
+            .continue {
+                background: #3652ad;
+                border: 1px solid #3652ad;
+                padding: 7px 21px;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    .type_point_all {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10px 0;
+        border-bottom: 1px solid #aaaaaabd;
+        padding-bottom: 10px;
+
+        .type_point {
+            display: flex;
+            align-items: center;
+
+            .avtar_team {
+                margin: 0 20px 0px 0px;
+                text-align: center;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                }
+
+                .type_wk {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin-top: -10px;
+
+                    .fg {
+                        background: #000;
+                        border-radius: 4px 0 0 4px;
+
+                        p {
+                            color: #fff;
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 1px 7px;
+                        }
+                    }
+
+                    .wk_tex {
+                        background: #e5ddc8;
+                        border-radius: 0px 4px 4px 0px;
+
+                        p {
+                            color: #000;
+                            font-size: 14px;
+                            margin: 0;
+                            padding: 1px 9px;
+                        }
+                    }
+                }
+            }
+
+            .name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h5 {
+                    font-size: 20px;
+                    color: #000;
+                    margin-bottom: 2px;
+                }
+
+                p {
+                    color: #898989;
+                    font-size: 16px;
+                    margin: 0;
+                }
+            }
+        }
+
+        .captain_vice {
+            display: flex;
+            align-items: center;
+
+            .captian {
+                text-align: center;
+                margin: 0 30px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h5 {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                }
+
+                .green_color {
+                    background: #00972a;
+                    border: 1px solid #00972a;
+                    color: #fff;
+                }
+
+                .red_color {
+                    background: #dd0042;
+                    border: 1px solid #dd0042;
+                    color: #fff;
+                }
+
+                p {
+                    color: #898989;
+                    font-size: 16px;
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+.team_privew_sec {
+    .heading {
+        background: #0a1649;
+        padding: 20px;
+
+        .mini_heading {
+            h4 {
+                color: #fff;
+                font-size: 20px;
+                border-bottom: 1px solid #fff;
+                padding-bottom: 16px;
+                margin: 0;
+            }
+        }
+
+        .playes_crdit {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 13px;
+
+            .player {
+                h5 {
+                    color: #fff;
+                    font-size: 19px;
+                }
+
+                h6 {
+                    color: #fff;
+                    font-size: 17px;
+                    margin: 0;
+                }
+            }
+
+            .ratio_content {
+                display: flex;
+                align-items: center;
+
+                .white_btn {
+                    background: #fff;
+                    border: 1px solid #fff;
+                    color: #000;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    padding: 4px 13px;
+                }
+
+                .black_btn {
+                    background: #000000;
+                    border: 1px solid #000000;
+                    color: #fff;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    padding: 4px 13px;
+                }
+
+                p {
+                    color: #fff;
+                    font-weight: 500;
+                    margin: 0;
+                    font-size: 18px;
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+
+    .team_preview_main {
+        position: relative;
+
+        .team_preview_img {}
+
+        .wick_heading_common {
+            h4 {
+                color: #fff;
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+
+        .wicket_heading {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .batter_heading {
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .allrounder_heading {
+            position: absolute;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .bowler_heading {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .common_player {
+            display: flex;
+            align-items: center;
+
+            justify-content: space-around;
+
+            .name_avtar {
+                text-align: center;
+                margin: 0 20px;
+
+
+                img {
+                    width: 80px;
+                }
+
+                .player_name {
+                    background: #000;
+                    border: 0;
+                    border-radius: 0;
+                    padding: 3px 15px;
+                    font-weight: 400;
+                    margin: 0 auto;
+                }
+
+                p {
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .wicket_keeper {
+            position: absolute;
+            top: 16%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .batter_player {
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // width: 100%;
+        }
+
+        .allrounder_player {
+            position: absolute;
+            top: 64%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+
+        .bowler_player {
+            position: absolute;
+            top: 89%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100%;
+            margin: auto;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-color: #fff;
+
+    .navbar-toggler-icon {
+        filter: invert(1);
+    }
+}
+
+
+
+
+@media(max-width: 1199.98px) {
+    .team_score_tabs_sec {
+        .live_match_content {
+            .over_list {
+                padding-right: 9px;
+
+                .comman_run {
+                    width: 22px;
+                    height: 22px;
+                    flex: 0 0 22px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media(max-width: 991.98px) {
+    .team_privew_sec {
+        .team_preview_main {
+            .wicket_heading {
+                top: 5%;
+            }
+
+            .batter_heading {
+                top: 30%;
+            }
+
+            .allrounder_heading {
+                top: 53%;
+            }
+        }
+    }
+
+    .blog_detail_sec {
+        .blog_detail_content {
+            .heading {
+                .title {
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+            }
+
+            .blog_img {
+                img {
+                    height: 279px;
+                }
+            }
+        }
+
+        .pridicate_img {
+            img {
+                height: 246px;
+            }
+        }
+    }
+
+    .mini_cricket_banner {
+        margin-top: 20px;
+    }
+
+    .latest_blog_sec {
+        .latest_news_blog_card {
+            .blog_img {
+                img {
+                    width: 400px;
+                    height: 171px;
+                }
+            }
+
+            .content {
+                padding: 20px 15px;
+
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .read_more {
+                    font-size: 11px;
+                    padding: 5px 10px;
+                    margin: 11px 0;
+                }
+
+                .cricket_btn {
+                    top: 5px;
+
+                    .cricket_match_btn {
+                        font-size: 11px;
+                        padding: 3px 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .score_main_sli {
+        min-width: 685px;
+        overflow: scroll;
+    }
+
+    .score_main_sli::-webkit-scrollbar {
+        display: none;
+    }
+
+    .team_score_tabs_sec {
+        .live_match_content {
+            .over_list {
+                padding-right: 22px;
+            }
+        }
+    }
+
+    .scorecars_tabs_main .accordion .accordion-body .scorecard_cards_count table tbody tr td p {
+        width: 200px;
+    }
+
+    .score_main_sec .result_content h4 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 30px 20px 20px 10px;
+        margin-top: 30px;
+
+        .logo {
+            margin-bottom: 20px;
+        }
+    }
+
+    .cricket_match_blog_sec {
+        .heading {
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .blog_card {
+            padding: 10px;
+
+            .content {
+                h4 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .read_more_btn {
+                    font-size: 12px;
+                    padding: 5px 6px;
+                }
+            }
+
+            .match_button {
+                top: 5px;
+
+                .match_red_btn {
+                    font-size: 10px;
+                    padding: 5px 5px;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 767.98px) {
+    .team_privew_sec {
+        .heading {
+            .mini_heading {
+                h4 {
+                    font-size: 12px;
+                    padding-bottom: 10px;
+                }
+            }
+
+            .playes_crdit {
+                .player {
+                    h5 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .ratio_content {
+            .white_btn {
+                padding: 2px 9px !important;
+                font-size: 13px;
+            }
+
+            .black_btn {
+                padding: 2px 9px !important;
+                font-size: 13px;
+            }
+        }
+
+        .team_preview_main {
+            .wick_heading_common {
+                h4 {
+                    font-size: 12px;
+                }
+            }
+
+            .common_player {
+                .name_avtar {
+                    width: 100px;
+
+                    img {
+                        width: 37px;
+                    }
+
+                    .player_name {
+                        font-size: 9px;
+                    }
+
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .captian_choose_sec {
+        .heading {
+            margin-top: 15px;
+
+            h3 {
+                font-size: 19px;
+            }
+        }
+
+        .vc_captain {
+            .heading {
+                padding: 7px 0;
+
+                .heading_sub {
+                    h5 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .type_point_all {
+            margin: 5px 0 0 0;
+            padding-bottom: 5px;
+
+            .type_point {
+                .avtar_team {
+                    margin: 0 10px 0px 0px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    .type_wk {
+                        .fg {
+                            p {
+                                font-size: 7px;
+                            }
+                        }
+                    }
+
+                    .wk_tex {
+                        p {
+                            font-size: 7px !important;
+                        }
+                    }
+                }
+
+                .name {
+
+
+                    h5 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .captain_vice {
+                .captian {
+                    h5 {
+                        width: 35px;
+                        height: 35px;
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        margin: -3px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .scorecars_tabs_main {
+        .accordion {
+            .accordion-body {
+                .scorecard_cards_count {
+                    table {
+                        tbody {
+                            tr {
+                                td {
+                                    p {
+                                        width: 136px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        padding: 10px;
+                    }
+
+                    .team_main {
+                        .team_img {
+                            img {
+                                width: 28px;
+                                height: 28px;
+                            }
+
+                            h5 {
+                                font-size: 15px;
+                                margin: 0px 0 0 10px;
+                            }
+                        }
+
+                        h6 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+
+            .accordion-body {
+                .scorecard_cards_count {
+                    table {
+                        thead {
+                            tr {
+                                th {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 13px;
+
+                                    p {
+                                        font-size: 11px;
+                                        width: 74px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .info_tab_content {
+        .comman_card {
+            padding: 10px;
+            margin-bottom: 10px;
+
+            .content {
+                h5 {
+                    font-size: 14px !important;
+                }
+
+                h6 {
+                    font-size: 14px !important;
+                }
+            }
+
+            .addrss_main {
+                h5 {
+                    font-size: 13px;
+                    padding: 8px 0px 8px 0;
+                }
+            }
+        }
+
+        .recent_matchs_main {
+            .accordion {
+                .accordion-item {
+                    .accordion-header {
+                        .accordion-button {
+                            padding: 7px;
+                        }
+
+                        .team_name {
+                            h4 {
+                                font-size: 15px;
+                            }
+                        }
+
+                        .runs_balls h5 {
+                            width: 25px;
+                            height: 25px;
+                            flex: 0 0 25px;
+                            margin-left: 13px;
+                        }
+                    }
+
+                    .accordion-body {
+                        .recent_match_card {
+                            .won_text {
+                                svg {
+                                    width: 17px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .team_match_ {
+                                h4 {
+                                    font-size: 14px;
+                                }
+
+                                .img_con {
+                                    .image {
+                                        img {
+                                            width: 35px;
+                                            height: 35px;
+                                        }
+                                    }
+
+                                    .content {
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .did_not_bat_main {
+            .umpirs_main {
+                .umpire {
+                    .name {
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .score_main_sli {
+        min-width: 475px;
+    }
+
+    .team_score_tabs_sec {
+        .nav-tabs {
+            margin-top: -53px;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 15px;
+                    padding: 6px 36px;
+                }
+            }
+        }
+
+        .live_match_content {
+            .comman_card {
+                padding: 15px;
+                margin-bottom: 10px;
+
+                .content {
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    .buttons {
+                        .btn_red {
+                            font-size: 10px;
+                            margin-right: 10px;
+                        }
+
+                        .btn_green {
+                            font-size: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .batter_heading {
+                    .batter_div {
+                        h5 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .score_main_sec {
+        .match_title {
+            h3 {
+                margin-bottom: 30px;
+                font-size: 19px;
+            }
+        }
+
+        .score_content {
+            .team_img {
+                width: 60px;
+                height: 60px;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+
+            .score {
+                margin-left: 15px !important;
+
+                h3 {
+                    font-size: 15px;
+                }
+
+                h4 {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .swiper_score_card {
+        .score_card {
+            .team_flag_main {
+                .team_flag {
+                    padding: 30px 51px;
+                }
+            }
+        }
+    }
+
+    .cricket_match_blog_sec {
+        .row {
+            margin: 0;
+            padding: 0;
+
+            .col-md-6 {
+                padding: 0;
+            }
+
+            .col-md-12 {
+                padding: 0;
+            }
+        }
+
+        .blog_card {
+            margin: 10px;
+        }
+    }
+}
+
+
+
+@media(max-width: 567.98px) {
+    .swiper-button-next {
+        display: none !important;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .team_privew_sec {
+        .team_preview_main {
+            .common_player {
+                .name_avtar {
+                    width: 78px;
+                }
+            }
+        }
+    }
+
+    .captian_choose_sec {
+        .vc_captain {
+            .heading {
+                .heading_sub {
+                    h5 {
+                        margin: 0px 26px;
+                    }
+                }
+            }
+
+            .continue_btn {
+                .continue {
+                    padding: 4px 15px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+
+    .captian_choose_sec {
+        .heading {
+            h3 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 13px;
+                margin: 2px 0;
+            }
+        }
+    }
+
+    .blog_detail_sec {
+        .blog_detail_content {
+            .heading {
+                .title {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 13px;
+                    line-height: 19px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .latest_blog_sec {
+        .latest_news_blog_card {
+            .blog_img {
+                img {
+                    height: 139px;
+                }
+            }
+
+            .content {
+                padding: 6px 15px;
+
+                .date_p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .links {
+            ul {
+                li {
+                    margin-bottom: 6px;
+
+                    a {
+                        font-size: 14px;
+
+                        svg {
+                            margin-right: 10px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .score_main_sli {
+        min-width: 345px;
+    }
+
+    .team_score_tabs_sec {
+        .live_match_content {
+            .comman_card {
+                .content {
+                    .ms-4 {
+                        margin-left: 0rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .score_main_sec {
+        padding: 20px 0;
+
+        .score_row {
+            margin-bottom: 40px;
+        }
+
+        .result_content {
+            h4 {
+                font-size: 13px;
+            }
+        }
+
+        .match_title {
+            h3 {
+                font-size: 15px;
+            }
+        }
+
+        .score_content {
+            .score {
+                margin-left: 3px !important;
+
+            }
+
+            .team_img {
+                width: 40px;
+                height: 40px;
+                margin: 0 !IMPORTANT;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+
+    header {
+        .top_menu {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        .nav-link {
+            color: #000 !important;
+        }
+    }
+
+    .gentrate_desktop {
+        display: none !important;
+    }
+}
